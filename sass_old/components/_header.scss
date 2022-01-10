@@ -1,0 +1,103 @@
+.nav {
+  border-bottom: 1px solid #ececec;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo-link {
+  @extend %link;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $accent-color;
+}
+
+.logo-link__right-header {
+  color: $main-text-color;
+}
+
+.nav-list {
+  @extend %list;
+  display: flex;
+}
+
+.nav-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list__link {
+  @extend %link;
+  display: block;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+  padding: 32px 0;
+  @include traisitionEffect(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.nav-list__link--current {
+  color: $accent-color;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background: $accent-color;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+}
+
+.contacts-list__icon {
+  fill: currentColor;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.contacts-list {
+  @extend %list;
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-list__link {
+  @extend %link;
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $second-text-color;
+
+  @include traisitionEffect(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

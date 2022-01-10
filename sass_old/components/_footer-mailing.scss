@@ -1,0 +1,58 @@
+/* FOOTER MAILING */
+
+.footer-mailing__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $third-text-color;
+  margin-bottom: 20px;
+}
+
+.footer-mailing__form {
+  display: flex;
+  position: relative;
+}
+
+.footer-mailing__email {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  padding: 15px 16px;
+  margin-right: 12px;
+}
+
+.footer-mailing__submit {
+  display: flex;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  padding: 10px 6px;
+  min-width: 200px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $accent-color;
+  color: $third-text-color;
+}
+
+.submit-icon {
+  margin-left: 10px;
+  fill: $third-text-color;
+}
