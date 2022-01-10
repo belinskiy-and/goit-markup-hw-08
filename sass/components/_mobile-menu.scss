@@ -1,0 +1,111 @@
+.open-menu-btn {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: $third-block-color;
+  z-index: 5;
+  padding: 48px 40px;
+
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    height: 100%;
+  }
+}
+
+.close-menu-btn {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-nav-list {
+  @extend %list;
+
+  .mobile-nav-list__item {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  .mobile-nav-list__link {
+    @extend %link;
+    color: $main-text-color;
+
+    &--current {
+      color: $accent-color;
+    }
+  }
+}
+
+.mobile-nav-contacts-list {
+  @extend %list;
+  margin-top: auto;
+  margin-bottom: 64px;
+
+  &__item-phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+  }
+
+  &__link-phone {
+    @extend %link;
+    color: $accent-color;
+  }
+
+  &__item-mail {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+
+  &__link-mail {
+    @extend %link;
+    color: $second-text-color;
+  }
+}
+
+.mobile-nav-social-list {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
+
+  &__link {
+    @extend %link;
+    color: $accent-color;
+  }
+}
