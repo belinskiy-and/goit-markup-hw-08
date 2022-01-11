@@ -945,7 +945,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 450px;
   /* height: 581px; */
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
@@ -1054,7 +1054,7 @@ p {
 .form-checkbox__label {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1069,7 +1069,6 @@ p {
   width: 15px;
   height: 15px;
   margin-right: 4px;
-  margin-left: 13px;
   border: 2px solid #212121;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
