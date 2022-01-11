@@ -5,11 +5,30 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  // @media screen and (min-width: 768px) {
+  //   .container {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     align-items: baseline;
+  //   }
+  // }
+
   @media screen and (min-width: 1200px) {
     .container {
       display: flex;
       align-items: baseline;
     }
+  }
+}
+
+.contact-social {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
   }
 }
 

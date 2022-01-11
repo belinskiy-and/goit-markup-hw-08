@@ -701,6 +701,19 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contact-social {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-social {
+    margin-right: auto;
+  }
+}
+
 .footer-contacts__logo {
   display: block;
   font-family: Raleway;
@@ -787,7 +800,6 @@ p {
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-bottom: 0;
-    margin-right: auto;
   }
 }
 
@@ -873,10 +885,19 @@ p {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-mailing__email {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-mailing__email {
     margin-right: 12px;
     margin-bottom: 0;
+    width: 358px;
   }
 }
 
