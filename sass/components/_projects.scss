@@ -1,8 +1,17 @@
 .projects-filter__list {
   @extend %list;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .projects-filter__item:not(:last-child) {
@@ -21,6 +30,7 @@
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  margin-bottom: 21px;
 
   transition: background-color 250ms $cubic-value, color 250ms $cubic-value,
     box-shadow 250ms $cubic-value;
@@ -37,16 +47,28 @@
 
 .projects-list {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
+
   margin-top: -30px;
-  margin-left: -30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .projects-list__item {
   margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 3 * 30px) / 3);
+
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .projects-list__image-thumb {
@@ -69,6 +91,7 @@
 
 .projects-list__image {
   display: block;
+  width: 100%;
 }
 
 .projects-list__image-title {
