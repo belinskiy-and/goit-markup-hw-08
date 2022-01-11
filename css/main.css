@@ -239,7 +239,11 @@ p {
 .mobile-menu.is-open {
   display: flex;
   flex-direction: column;
-  height: 100%;
+}
+
+.mobile-menu > .container {
+  width: 450px;
+  height: 80%;
 }
 
 .close-menu-btn-container {
@@ -262,6 +266,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 .mobile-nav-list .mobile-nav-list__item {
