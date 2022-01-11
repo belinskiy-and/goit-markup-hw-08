@@ -19,25 +19,43 @@
   top: 0;
   background-color: $third-block-color;
   z-index: 5;
-  padding: 48px 40px;
+  //padding: 48px 40px;
 
   &.is-open {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+
     height: 100%;
   }
+
+  // & > .container {
+  //   // padding: 48px 0;
+  //   // //width: 100%;
+  //   // width: 450px;
+  // }
+}
+
+.close-menu-btn-container {
+  padding: 15px 0;
+  width: 420px;
 }
 
 .close-menu-btn {
   display: block;
-  position: absolute;
+  // position: absolute;
   top: 10px;
   right: 15px;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-nav-list {
@@ -63,9 +81,13 @@
   }
 }
 
+.mobile-menu__bottom {
+  margin-top: auto;
+}
+
 .mobile-nav-contacts-list {
   @extend %list;
-  margin-top: auto;
+  // margin-top: auto;
   margin-bottom: 64px;
 
   &__item-phone {
