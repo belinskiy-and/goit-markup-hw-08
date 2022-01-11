@@ -1,7 +1,12 @@
 /* FOOTER SOCIAL */
 
 .footer-social {
-  margin-right: auto;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
 }
 
 .footer-social__list {
@@ -18,6 +23,7 @@
   text-transform: uppercase;
   color: $third-text-color;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-social__item {

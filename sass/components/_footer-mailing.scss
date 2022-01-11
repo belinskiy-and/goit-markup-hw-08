@@ -8,16 +8,20 @@
   text-transform: uppercase;
   color: $third-text-color;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-mailing__form {
-  display: flex;
-  position: relative;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    position: relative;
+  }
 }
 
 .footer-mailing__email {
   height: 50px;
-  width: 358px;
+  //width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -32,7 +36,12 @@
   color: rgba(255, 255, 255, 0.6);
 
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-mailing__submit {

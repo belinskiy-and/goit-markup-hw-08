@@ -694,17 +694,27 @@ p {
   padding-bottom: 60px;
 }
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-contacts__logo {
+  display: block;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: #2196f3;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts__logo {
+    text-align: left;
+  }
 }
 
 .footer-contacts__logo-right {
@@ -717,6 +727,15 @@ p {
 
 .footer-contacts__address-section {
   font-style: inherit;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts__address-section {
+    display: inline;
+    text-align: left;
+  }
 }
 
 .footer-contacts__address {
@@ -746,7 +765,14 @@ p {
 }
 
 .footer-contacts-container {
-  margin-right: 70px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts-container {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
 }
 
 .footer-contacts__item + .footer-contacts__item {
@@ -755,7 +781,14 @@ p {
 
 /* FOOTER SOCIAL */
 .footer-social {
-  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
 }
 
 .footer-social__list {
@@ -771,6 +804,7 @@ p {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-social__item {
@@ -811,16 +845,19 @@ p {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.footer-mailing__form {
-  display: flex;
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .footer-mailing__form {
+    display: flex;
+    position: relative;
+  }
 }
 
 .footer-mailing__email {
   height: 50px;
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -833,7 +870,14 @@ p {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mailing__email {
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-mailing__submit {

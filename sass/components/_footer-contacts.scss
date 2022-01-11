@@ -5,19 +5,27 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  .container {
-    display: flex;
-    align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    .container {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
 
 .footer-contacts__logo {
   @extend %link;
+  display: block;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: $accent-color;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-contacts__logo-right {
@@ -31,6 +39,13 @@
 
 .footer-contacts__address-section {
   font-style: inherit;
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: inline;
+    text-align: left;
+  }
 }
 
 .footer-contacts__address {
@@ -65,7 +80,11 @@
 }
 
 .footer-contacts-container {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
 }
 
 .footer-contacts__item + .footer-contacts__item {
