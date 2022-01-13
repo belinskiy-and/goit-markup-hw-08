@@ -127,7 +127,6 @@ p {
 }
 
 .logo-link {
-  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
   font-family: Raleway, sans-serif;
@@ -135,6 +134,18 @@ p {
   font-size: 26px;
   line-height: 1.19;
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-link {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-link {
+    margin-right: 93px;
+  }
 }
 
 .logo-link__right-header {
@@ -148,6 +159,7 @@ p {
 @media screen and (min-width: 768px) {
   .nav-list {
     display: flex;
+    margin-right: auto;
   }
 }
 
@@ -198,14 +210,23 @@ p {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: block;
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts-list {
     display: flex;
   }
 }
 
-.contacts-list__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts-list__link {
@@ -223,6 +244,13 @@ p {
 
 .contacts-list__link:hover, .contacts-list__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list__link {
+    padding: 5px;
+    margin-left: auto;
+  }
 }
 
 .open-menu-btn {
