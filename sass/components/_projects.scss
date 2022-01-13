@@ -14,8 +14,15 @@
   }
 }
 
-.projects-filter__item:not(:last-child) {
-  margin-right: 8px;
+.projects-filter__item {
+  
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 21px;
+  }
 }
 
 .projects-filter__btn {
@@ -30,7 +37,6 @@
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-  margin-bottom: 21px;
 
   transition: background-color 250ms $cubic-value, color 250ms $cubic-value,
     box-shadow 250ms $cubic-value;
@@ -105,10 +111,15 @@
   color: $third-text-color;
   background: rgba(33, 150, 243, 0.9);
   transition: transform 250ms $cubic-value;
+  height: 100%;
 
   .projects-list__link:hover &,
   .projects-list__link:focus & {
     transform: translateY(-100%);
+  }
+
+  @media screen and (max-width: 397px) {
+    padding: 10px;    
   }
 }
 

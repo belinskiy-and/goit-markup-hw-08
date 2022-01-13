@@ -24,10 +24,13 @@ button {
 }
 
 .section {
-  // padding-bottom: 94px;
-  // padding-top: 94px;
   padding-bottom: 60px;
   padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .container {
@@ -37,6 +40,7 @@ button {
   max-width: $container-size;
   padding-left: $container-padding;
   padding-right: $container-padding;
+  min-width: 320px;
 
   &.works {
     display: none;
@@ -60,4 +64,8 @@ button {
 
 .container > h2 {
   margin-bottom: 50px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
 }

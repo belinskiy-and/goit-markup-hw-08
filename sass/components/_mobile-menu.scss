@@ -12,17 +12,26 @@
 }
 
 .mobile-menu {
-  display: none;
+  // display: none;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   width: 100vw;
   height: 100vh;
+  min-width: 320px;
   top: 0;
   background-color: $third-block-color;
   z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms $cubic-value;
+  outline: 1px solid tomato;
 
   &.is-open {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    opacity: 1;
+    transition: opacity 250ms $cubic-value;
 
     // height: 100%;
   }
@@ -35,7 +44,7 @@
 
 .close-menu-btn-container {
   padding: 15px 0;
-  width: 420px;
+  width: 100%;
 }
 
 .close-menu-btn {
@@ -95,6 +104,10 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
+
+    @media screen and (max-width: 479px) {
+      font-size: 32px;
+    }
   }
 
   &__link-phone {
@@ -117,12 +130,26 @@
 .mobile-nav-social-list {
   @extend %list;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  // justify-content: space-between;
 
   &__item {
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+
+    @media screen and (max-width: 389px) {
+      &:last-child {
+        padding-top: 10px;
+      }
+    }
   }
 
   &__link {

@@ -8,7 +8,10 @@
   text-transform: uppercase;
   color: $third-text-color;
   margin-bottom: 20px;
-  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-mailing__form {

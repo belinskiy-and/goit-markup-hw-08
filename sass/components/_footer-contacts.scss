@@ -29,6 +29,11 @@
 
   @media screen and (min-width: 1200px) {
     margin-right: auto;
+    align-items: baseline;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
   }
 }
 
@@ -99,7 +104,10 @@
 }
 
 .footer-contacts-container {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-right: 70px;
